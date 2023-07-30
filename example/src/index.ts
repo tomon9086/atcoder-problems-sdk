@@ -1,3 +1,3 @@
-import { hello } from '../../src'
+import { retrieveUserSubmission } from '../../src'
 
-hello()
+retrieveUserSubmission('chokudai', '1560046356')
