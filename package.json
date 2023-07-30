@@ -1,0 +1,16 @@
+{
+  "name": "atcoder-problems-sdk",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "nodemon --watch 'src' --exec yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  }
+}
