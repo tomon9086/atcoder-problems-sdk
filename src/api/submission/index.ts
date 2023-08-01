@@ -14,7 +14,7 @@ type UserSubmission = {
   execution_time: number
 }
 
-type RetrieveUserSubmissionResponse = UserSubmission[]
+export type RetrieveUserSubmissionResponse = UserSubmission[]
 
 export const retrieveUserSubmission = async (
   userName: string,
