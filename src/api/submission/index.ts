@@ -1,3 +1,4 @@
+import { axiosInstance } from '@/request'
 import { EndpointName, apiUrl } from '@/util'
 
 type UserSubmission = {
@@ -19,9 +20,9 @@ export const retrieveUserSubmission = async (
   userName: string,
   fromSecond: string | number
 ) => {
-  const res = await fetch(
+  const res = await axiosInstance.get<RetrieveUserSubmissionResponse>(
     apiUrl(EndpointName.userSubmission, userName, fromSecond)
   )
-  const json = (await res.json()) as RetrieveUserSubmissionResponse
-  return json
+
+  return res.data
 }
