@@ -7,4 +7,10 @@ describe('apiUrl', () => {
       `${API_ORIGIN}/user/submissions?user=userName&from_second=123456789`
     )
   })
+  it('invalid', () => {
+    expect(() => {
+      // @ts-ignore
+      apiUrl()
+    }).toThrow()
+  })
 })
