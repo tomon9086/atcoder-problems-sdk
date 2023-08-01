@@ -2,6 +2,7 @@
   "name": "atcoder-problems-sdk",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
