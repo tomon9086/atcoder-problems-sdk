@@ -6,12 +6,17 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "watch": "nodemon --watch 'src' --exec yarn build"
+    "watch": "nodemon --watch 'src' --exec yarn build",
+    "test": "jest --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
+    "babel-jest": "^29.6.2",
+    "jest": "^29.6.2",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   }
 }
